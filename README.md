@@ -5,6 +5,38 @@
   </picture>
 </a>
 
+```text
+╭──────────────▄▄▄▄──────────────╮
+│                                │
+│ ╭──────────╮                   │
+│ │   .--.   │  cameron williams │
+│ │  /    \  │  ──────────────── │
+│ │  \    /  │  sw engineer      │
+│ │ .-'--'-. │                   │
+│ │/        \│                   │
+│ ╰──────────╯                   │
+│                                │
+│ Currently building             │
+│   bitkey @ block               │
+│ ────────────────────────────── │
+│ Based in                       │
+│   new york city                │
+│ ────────────────────────────── │
+│ Learning                       │
+│   rust + wasm                  │
+│ ────────────────────────────── │
+│ Beverage of choice             │
+│   la croix                     │
+│ ────────────────────────────── │
+│ Alter ego                      │
+│   spiderman 4143               │
+│ ────────────────────────────── │
+│                                │
+│ █▌█▌██▌█▌▌█▌██▌█▌█▌▌██▌█▌█▌█▌█ │
+│                                │
+╰────────────────────────────────╯
+```
+
 [![Website](https://img.shields.io/badge/Website-cameronwillia.ms-informational?style=flat&logo=astro&logoColor=white&color=1f2937)](https://cameronwillia.ms)
 ![Location](https://img.shields.io/badge/New%20York-grey?style=flat&logo=googlemaps&logoColor=white)
 ![Profile views](https://komarev.com/ghpvc/?username=cvwilliams&style=flat&color=1f2937&label=Profile+views)
