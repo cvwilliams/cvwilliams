@@ -1,10 +1,3 @@
-<a href="https://cameronwillia.ms">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-    <img src="./assets/banner-light.svg" alt="Cameron Williams. Engineer, tinkerer, overthinker. New York. cameronwillia.ms" width="100%">
-  </picture>
-</a>
-
 <p align="center">
   <img src="./assets/id-card.svg" width="640" alt="ID card. Name: Cameron Williams. Role: sw engineer. Currently building: bitkey @ block. Based in: new york city. Learning: rust + wasm. Beverage of choice: la croix. Alter ego: spiderman 4143.">
 </p>
