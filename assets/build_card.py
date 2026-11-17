@@ -65,6 +65,28 @@ def barcode(x, y, w, h):
     return f'<g fill="{ETCH}" opacity=".75">{"".join(out)}</g>'
 
 
+def sticker(cx, cy, r):
+    """Holographic seal with the shapes from cameronwillia.ms printed on foil."""
+    x, y = X(cx), Y(cy)
+    s = r / 40  # shapes are drawn on a 80x80 grid centred on the seal
+    return f"""
+    <g>
+      <clipPath id="seal"><circle cx="{x}" cy="{y}" r="{r}"/></clipPath>
+      <g clip-path="url(#seal)">
+        <rect x="{x - r}" y="{y - r}" width="{2 * r}" height="{2 * r}" fill="url(#holo)"/>
+        <g transform="translate({x} {y}) scale({s})" opacity=".82" style="mix-blend-mode:multiply">
+          <circle cx="6" cy="-8" r="17" fill="#f4c12b"/>
+          <rect x="-26" y="2" width="30" height="40" fill="#1e4fa6"/>
+          <path d="M-2 42L17 6L36 42Z" fill="#141414"/>
+          <circle cx="24" cy="-24" r="5" fill="#ea4b35"/>
+        </g>
+        <circle cx="{x}" cy="{y}" r="{r}" fill="url(#holoSheen)"/>
+      </g>
+      <circle cx="{x}" cy="{y}" r="{r - .5}" fill="none" stroke="#fff" stroke-opacity=".7"/>
+      <circle cx="{x}" cy="{y}" r="{r}" fill="none" stroke="#6c7176" stroke-opacity=".45"/>
+    </g>"""
+
+
 def svg(font_b64):
     fields = []
     for i, (label, value) in enumerate(FIELDS):
@@ -120,6 +142,21 @@ def svg(font_b64):
       <stop offset=".12" stop-color="#000" stop-opacity=".03"/>
       <stop offset="1" stop-color="#fff" stop-opacity=".12"/>
     </linearGradient>
+    <linearGradient id="holo" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" spreadMethod="reflect">
+      <stop offset="0" stop-color="#f6c9e4"/>
+      <stop offset=".25" stop-color="#cfe9fb"/>
+      <stop offset=".5" stop-color="#c9f3e1"/>
+      <stop offset=".75" stop-color="#f7ecbd"/>
+      <stop offset="1" stop-color="#dccff8"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="0 0; .6 .6; .6 .6" keyTimes="0; .4; 1" dur="7s"
+        calcMode="spline" keySplines=".4 0 .3 1; 0 0 1 1" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="holoSheen" cx=".3" cy=".25" r=".8">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#fff" stop-opacity="0"/>
       <stop offset=".5" stop-color="#fff" stop-opacity=".22"/>
@@ -211,6 +248,8 @@ def svg(font_b64):
     </g>
     <rect x="{X(px) + .5}" y="{Y(py) + .5}" width="{pw - 1}" height="{ph - 1}" rx="13.5" fill="none" stroke="#6c7176" stroke-opacity=".55"/>
     <path d="M{X(px) + 14} {Y(py + ph) + 1.5}h{pw - 28}" stroke="#fff" stroke-opacity=".55"/>
+
+    <!-- hologram sticker -->{sticker(92, 530, 34)}
 
     <!-- glint: a faint, wide band of light that drifts across, then rests -->
     <g class="shine" clip-path="url(#cardClip)">
