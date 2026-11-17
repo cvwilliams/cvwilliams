@@ -5,37 +5,9 @@
   </picture>
 </a>
 
-```text
-╭──────────────▄▄▄▄──────────────╮
-│                                │
-│ ╭──────────╮                   │
-│ │   .--.   │  cameron williams │
-│ │  /    \  │  ──────────────── │
-│ │  \    /  │  sw engineer      │
-│ │ .-'--'-. │                   │
-│ │/        \│                   │
-│ ╰──────────╯                   │
-│                                │
-│ Currently building             │
-│   bitkey @ block               │
-│ ────────────────────────────── │
-│ Based in                       │
-│   new york city                │
-│ ────────────────────────────── │
-│ Learning                       │
-│   rust + wasm                  │
-│ ────────────────────────────── │
-│ Beverage of choice             │
-│   la croix                     │
-│ ────────────────────────────── │
-│ Alter ego                      │
-│   spiderman 4143               │
-│ ────────────────────────────── │
-│                                │
-│ █▌█▌██▌█▌▌█▌██▌█▌█▌▌██▌█▌█▌█▌█ │
-│                                │
-╰────────────────────────────────╯
-```
+<p align="center">
+  <img src="./assets/id-card.svg" width="640" alt="ID card. Name: Cameron Williams. Role: sw engineer. Currently building: bitkey @ block. Based in: new york city. Learning: rust + wasm. Beverage of choice: la croix. Alter ego: spiderman 4143.">
+</p>
 
 [![Website](https://img.shields.io/badge/Website-cameronwillia.ms-informational?style=flat&logo=astro&logoColor=white&color=1f2937)](https://cameronwillia.ms)
 ![Location](https://img.shields.io/badge/New%20York-grey?style=flat&logo=googlemaps&logoColor=white)
