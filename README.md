@@ -2,17 +2,13 @@
   <img src="./assets/id-card.svg" width="640" alt="ID card. Name: Cameron Williams. Role: sw engineer. Currently building: bitkey @ block. Based in: new york city. Learning: rust + wasm. Beverage of choice: la croix. Alter ego: spiderman 4143.">
 </p>
 
-[![Website](https://img.shields.io/badge/Website-cameronwillia.ms-informational?style=flat&logo=astro&logoColor=white&color=1f2937)](https://cameronwillia.ms)
-![Location](https://img.shields.io/badge/New%20York-grey?style=flat&logo=googlemaps&logoColor=white)
-![Profile views](https://komarev.com/ghpvc/?username=cvwilliams&style=flat&color=1f2937&label=Profile+views)
+I currently work on [Bitkey](https://github.com/proto-at-block/bitkey), which is open source.
 
-👉 Learn more about me at **[cameronwillia.ms](https://cameronwillia.ms)**.
+**Recent thoughts:**
 
-## 📌 Projects
-
-- **[dotfiles](https://github.com/cvwilliams/dotfiles)**: my dependency-free zsh and Vim config for macOS
-- **[personal-website](https://github.com/cvwilliams/personal-website)**: source for [cameronwillia.ms](https://cameronwillia.ms), built with Astro
-- **[pregunta-del-dia](https://github.com/cvwilliams/pregunta-del-dia)**: a question of the day, in TypeScript
+<!-- BLOG-POST-LIST:START -->
+- [Who is code style for in the AI era?](https://cameronwillia.ms/thoughts/who-is-code-style-for/) · Nov 15, 2026<br><sub>Linters and formatters exist so people can read each other’s code, but we are writing and reading way less of it.</sub>
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
